@@ -1,0 +1,52 @@
+---
+title: "clase5"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+Ahora vamos a probar a incluir otro fragmento de texto
+```{r}
+boxplot(cars$speed)
+```
+
+vamos a generar el vector y hacer las estadisticas
+```{r}
+vv <- rep (1:20,200)
+summary (vv)
+boxplot(vv,main = "myvector")
+```
+
+buenas tardes, este es el _primer_ trabajo __rmarkdown__  
+puedo poner 2^2^ 
+esto se escribe en markdown __`r mean (vv)`__
+
+$A = \pi * r^2$
+
+
+# Primer titulo  
+## Segundo titulo  
+### Tercer titulo  
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
