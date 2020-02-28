@@ -7,31 +7,55 @@ output: word_document
 
 ## 2.2 TRABAJANDO CON GITHUB
 
+1.Crea una cuenta en GitHub
 
+![alt text](creacioncuenta.jpg)
+
+2.Instala Git: 
+
+![alt text](imagengitlab1.jpg)
+
+3.Preséntate: 
+
+![alt text](2.3.jpg)
+
+
+4.Creación repositorio: 
+
+![alt text](2.4.jpg)
+
+5.Conecta Rstudio a Git y Github:: 
+
+![alt text](2.5.jpg)
+
+6.	Introducir en el archivo README.md “Esta es una línea que incluí desde mi Rstudio”: 
+
+![alt text](2.6.jpg)
 
 ## 2.3 DEFINICIÓN DE CONCEPTOS
 
--	Repositorio: Directorio ubicado en Github dónde se encontrarán todos los proyectos con los que se trabajará en R. Este fichero siempre deberá incluir un archivo llamado READ ME dónde se añadirán los comentarios por parte de los integrantes del proyecto.
 
--	Rama: Es una copia del archivo principal, donde se puede trabajar sin que afecte al archivo base, de esta forma no se sobreescriben los archivos. Se puede trabajar con diferentes ramas de una forma que pueden participar diferentes personas sin que los trabajos se sobreescriban.
+-	__Repositorio__: Directorio ubicado en Github dónde se encontrarán todos los proyectos con los que se trabajará en R. Este fichero siempre deberá incluir un archivo llamado READ ME dónde se añadirán los comentarios por parte de los integrantes del proyecto.
 
--	Pull and push: Es la forma de añadir o descargar los archivos y sus cambios entre R y Github.
+-	__Rama__: Es una copia del archivo principal, donde se puede trabajar sin que afecte al archivo base, de esta forma no se sobreescriben los archivos. Se puede trabajar con diferentes ramas de una forma que pueden participar diferentes personas sin que los trabajos se sobreescriban.
 
--	Fork: Repositorio ubicado en otra cuenta del cual podemos descargarnos o copiar la información que necesitemos e incoporarla a nuestro directorio para poder modificarla  y trabajar sobre ella. 
+-	__Pull and push__: Es la forma de añadir o descargar los archivos y sus cambios entre R y Github.
+
+-	__Fork__: Repositorio ubicado en otra cuenta del cual podemos descargarnos o copiar la información que necesitemos e incoporarla a nuestro directorio para poder modificarla  y trabajar sobre ella. 
 
 
 ## 2.4.2 FRAGMENTOS DE CÓDIGO
 
-a.Peguen las palabas “Hola” y “mundo” en una línea nueva:
+a. Peguen las palabas “Hola” y “mundo” en una línea nueva:
 
 ```{r}
-print ("hola mundo")
+c("hola", "mundo")
 ```
 
 b.Peguen las palabas “Hola” y “mundo” en la misma línea de código 
 
-```{r, eval=TRUE, echo = TRUE}
-
+```{r}
+print("Hola mundo")
 ```
 
 c.Peguen las palabas “Hola” y “mundo” en una línea nueva de código y que no muestren el resultado de R
@@ -47,10 +71,3 @@ print ("hola mundo")
 ```
 
 ## 2.4.3 TABLAS Y GRÁFICOS
-
-A continuación se presenta una tabla nueva 
-
-```{r}
-View (iris)
-```
-
