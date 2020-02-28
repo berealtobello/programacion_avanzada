@@ -5,29 +5,52 @@ date: "February 28, 2020"
 output: word_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+## 2.2 TRABAJANDO CON GITHUB
+
+
+
+## 2.3 DEFINICIÓN DE CONCEPTOS
+
+-	Repositorio: Directorio ubicado en Github dónde se encontrarán todos los proyectos con los que se trabajará en R. Este fichero siempre deberá incluir un archivo llamado READ ME dónde se añadirán los comentarios por parte de los integrantes del proyecto.
+
+-	Rama: Es una copia del archivo principal, donde se puede trabajar sin que afecte al archivo base, de esta forma no se sobreescriben los archivos. Se puede trabajar con diferentes ramas de una forma que pueden participar diferentes personas sin que los trabajos se sobreescriban.
+
+-	Pull and push: Es la forma de añadir o descargar los archivos y sus cambios entre R y Github.
+
+-	Fork: Repositorio ubicado en otra cuenta del cual podemos descargarnos o copiar la información que necesitemos e incoporarla a nuestro directorio para poder modificarla  y trabajar sobre ella. 
+
+
+## 2.4.2 FRAGMENTOS DE CÓDIGO
+
+a.Peguen las palabas “Hola” y “mundo” en una línea nueva:
+
+```{r}
+print ("hola mundo")
 ```
 
-## R Markdown
+b.Peguen las palabas “Hola” y “mundo” en la misma línea de código 
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+```{r, eval=TRUE, echo = TRUE}
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-#hola yo soy erika
-## Including Plots
-#hola soy bere altobello 
-
-esta es la parte dos 
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+c.Peguen las palabas “Hola” y “mundo” en una línea nueva de código y que no muestren el resultado de R
+
+```{r, eval= FALSE, echo = TRUE}
+print ("hola mundo")
+```
+
+d.Peguen las palabas “Hola” y “mundo” en una línea nueva de código y que no muestren el resultado de R y que no se muestre en el documento de Word.
+
+```{r, eval= FALSE, echo = FALSE}
+print ("hola mundo")
+```
+
+## 2.4.3 TABLAS Y GRÁFICOS
+
+A continuación se presenta una tabla nueva 
+
+```{r}
+View (iris)
+```
+
