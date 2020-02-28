@@ -20,7 +20,9 @@ summary(cars)
 ```
 #hola yo soy erika
 ## Including Plots
-#hola soy bere
+#hola soy bere altobello 
+
+esta es la parte dos 
 
 You can also embed plots, for example:
 
